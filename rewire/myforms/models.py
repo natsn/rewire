@@ -1,6 +1,11 @@
 from django.db import models
 
 # Create your models here.
+class Project(models.Model):
+    name = models.CharField(max_length=255)
+    code = models.CharField(max_length=255)
+    phase = models.CharField(max_length=255)
+    
 class GreenSheet(models.Model):
     """
         The green sheet contains information regarding the 
@@ -80,8 +85,3 @@ class Profile(models.Model):
     # TODO: Extra info pulled in from Hiline,
     # TODO: Lookup or Create Profile object if successful authentication through LDAP
     pass
-
-class Project(models.Model):
-    name = models.CharField(max_length=255)
-    code = models.CharField(max_length=255)
-    phase = models.CharField(max_length=255)
