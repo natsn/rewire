@@ -1,2 +1,5 @@
 Django==1.9.1
+django-python3-ldap==0.9.9
+ldap3==1.0.4
+pyasn1==0.1.9
 wheel==0.26.0

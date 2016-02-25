@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_python3_ldap',
     'myforms'
 ]
+
+AUTHENTICATION_BACKENDS = ("django_python3_ldap.auth.LDAPBackend",)
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
